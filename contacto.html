@@ -4,77 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>MzBebidas</title>
 </head>
 <body>
     <header>
-        <nav class="barraNav">
-            <a href="index.html" class="btnLogo"><h1>MzBebidas</h1></a>
-            
-            <div class="btneraNav">
-                <a href="promos.html" class="btnNav">Promos</a>
-                <a href="productos.html" class="btnNav">Productos</a>
-                <a href="contacto.html" class="btnNavEsp">Contacto</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">MzBebidas</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contactos</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
-    <main>
-        <div>
-            <div>
-                <h2>Contactos</h2>
+
+    <main class="contactos">
+
+      <h1 class="form-tit">Contactos</h1>
+      <section class="form">
+        <form class="form-box" action="https://formspree.io/f/mldenwak"
+        method="POST">
+          <h2 class="tit-dat">¡Ingrese los datos para que lo contactemos!</h2>
+
+          <div class="form-princ">
+              <label class="datos">Nombre: </label>
+              <input class="inp-dts" type="text" size="30" name="nombre" required>
+              <br>
+            
+              <label class="datos">Apellido: </label>
+              <input class="inp-dts" type="text" size="30" name="apellido" required>
+              <br>
+
+              <label class="datos">email: </label>
+              <input class="inp-dts" type="email" size="30" name="email" required>
+              <br>
+
+              <label class="datos">Telefono: </label>
+              <input class="inp-dts" type="tel" size="30" name="telefono">
+              <br>
+          </div>
+
+          <div class="confirmacion-edad">
+            <h2 class="tit-dat">¿Eres mayor de edad?</h2>
+
+            <div class="calendario">
+              <label>Ingrese fecha de nacimiento: </label>
+              <input type="date" size="30" name="fecha" required>
             </div>
-            <div>
-                <h3>Nombre y Apellido</h3>
+
+            <h6 class="tit-conf"> ¡Recordá que la venta es solo para mayores de edad!</h6>
+          </div>
+
+          <div class="contacto-radio">
+            <h2 class="tit-dat">Indique la opcion que desea realizar:</h2>
+
+            <div class="opciones">
+              <input type="radio" name="contc">
+              <label for="">Contactar por WahtsApp</label>
+              <br>
+              <input type="radio" name="contc">
+              <label for="">Realizar pedido (Delivery)</label>
+              <br>
+              <input type="radio" name="contc">
+              <label for="">Pedidos por mayor (Envíos)</label>
+              <br>
             </div>
+          </div>
+
+          <div class="envio">
+            <h2 class="tit-dat">Datos del envío</h2>
 
             <div>
-                <h3>Mail</h3>
+              <label class="datos">Provincia </label>
+              <input class="inp-dts" type="text" size="30" name="provincia">
+              <br>
+
+              <label class="datos">Barrio </label>
+              <input class="inp-dts" type="text" size="30" name="barrio">
+              <br>
+
+              <label class="datos">Codigo Postal </label>
+              <input class="inp-dts" type="number" size="30" name="cp">
+              <br>
+
+              <label class="datos">Obvservaciones</label>
+              <input class="inp-dts" type="text" size="30" name="obvs">
+              <br>
             </div>
+          </div>
 
+          <div class="btnform">
+            <input class="btnenv" type="submit" value="Enviar">
+            <input class="btnres" type="reset" value="Resetear">
+          </div>
 
-
-
-
-
-
-
-
-
-
+        </form>
+      </section>
+    </main>
 
     <footer>
+      <div class="footgrid">
         <div class="contubi">
-            <div><h3>¿Dondé estamos?</h3></div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7827.687202623968!2d-58.69835314068273!3d-34.42327365289075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1729303267906!5m2!1ses-419!2sar" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-            <div><h5>Av.Benavidez, Benavidez, Provincia de Buenos Aires</h5></div>
-            </div>
-            </div>
-            <div class="contredes">
-                <h3>¡Nuestras Redes!</h3>
-                <h4>Seguinos en:</h4>
+        <div><h3>¿Dondé estamos?</h3></div>
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7827.687202623968!2d-58.69835314068273!3d-34.42327365289075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1729303267906!5m2!1ses-419!2sar" width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+        <div class="titmap"><h5>Av. siempre viva 123, Springfield, Provincia de Buenos Aires</h5></div>
+         </div>
+    </div>
     
-                <div class="iconredes">
-                    <div class="boxredes">
-                    <div class="iconbox">
-                        <a href=""><img src="img/instagram.png" alt="Instagram" class="imgred"></a>
-                        <h6 class="titredes">Instagram</h6>
-                    </div>
-                    <div class="iconbox">
-                        <a href=""><img src="img/discord.png" alt="Discord" class="imgred"></a>
-                        <h6 class="titredes">Discord</h6>
-                    </div>
-                    <div class="iconbox">
-                        <a href=""><img src="img/linkedin.png" alt="Linkedin" class="imgred"></a>
-                        <h6 class="titredes">Linkedin</h6>
-                    </div>
-                    <div class="iconbox">
-                        <a href=""><img src="img/facebook.png" alt="Facebook" class="imgred"></a>
-                        <h6 class="titredes">Facebook</h6>
-                    </div>
-                    </div>
-                </div>
+    <div class="contredes">
+
+        <h3>¡Nuestras Redes!</h3>
+
+        <h4 class="tith4">Seguinos en:</h4>
+
+        <div class="iconredes">
+            <div class="boxredes">
+            <div class="iconbox">
+                <a href="https://www.instagram.com/marianogonzaalez/"><img src="img/instagram.png" alt="Instagram" class="imgred"></a>
+                <h6 class="titredes">Instagram</h6>
             </div>
-    </footer>
+            <div class="iconbox">
+                <a href=""><img src="img/discord.png" alt="Discord" class="imgred"></a>
+                <h6 class="titredes">Discord</h6>
+            </div>
+            <div class="iconbox">
+                <a href="https://www.linkedin.com/in/mariano-yael-gonzalez-0b360321b/"><img src="img/linkedin.png" alt="Linkedin" class="imgred"></a>
+                <h6 class="titredes">Linkedin</h6>
+            </div>
+            <div class="iconbox">
+                <a href=""><img src="img/facebook.png" alt="Facebook" class="imgred"></a>
+                <h6 class="titredes">Facebook</h6>
+            </div>
+            <div class="iconbox">
+                <a href="https://github.com/MarianoGonzalez1"><img src="img/github.png" alt="" class="imgred"></a>
+                <h6 class="titredes">Git Hub</h6>
+            </div>
+            </div>
+        </div>
+        <div class="dev">
+            <h5>Desarollado por: <a href="https://www.linkedin.com/in/mariano-yael-gonzalez-0b360321b/">Mariano Gonzalez</a></h5>
+        </div>
+    </div>
+  </footer>
+
 </body>
 </html>

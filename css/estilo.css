@@ -1,55 +1,46 @@
 header{
-    background-color: #ed5761;
     position: sticky; 
     top: 0px;
     width: 100%;
+    margin: 0;
+    height: auto;
 }
 
-body{
-    background-color: #181419;
-    color: #ffffff;
+main{
+    background-color: rgb(24, 20, 25);
+    color: rgb(255, 255, 255);
     margin: 0;
     font-family: sans-serif;
     width: 100%;
 }
 
+
+
 img{
-    width: 100px;
-    height: 300px;
+    width: 100%;
+    height: 40vw;
 }
 
-.barraNav{
+.navbar{
+    width: 100%;
+}
+
+.container-fluid{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.5rem;
-    padding: 0rem 1rem;
-    position: relative;
-    height: auto;
-
+    width: 100%;
+    font-size: 3vw;
 }
 
-.btnLogo{
-    text-decoration: none;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
+
+.navbar-brand{
+    margin-left: 4vw;
+    width: 70%;
 }
 
-.btnNav{
-    text-decoration: none;
-    color: #ffffff;
-    padding: 1rem;
-}
 
-.btnNavEsp{
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #181419;
-    padding: 1rem;
-    border-radius: 20px;
+.collapse{
+    font-size: 1.5vw;
+    width: 30%;    
 }
 
 .imgbanner{
@@ -57,105 +48,123 @@ img{
     width: 100%;
 }
 
-hr{
-    border: 1px solid #ed5761;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-   
-}
-
-
-.contprod {
-    width: 100%;
-}
-
-.promocionesbox{    
-    width: 100%;
-}
-
 .titprinc{
     text-align: center;
-    padding: 1.5rem;
-    font-size: 1.5rem;
+    padding: 1.5vw;
+    font-size: 1.5vw;
+    font-size: 2rem;
     width: 100%;
-}
-
-.prodcprom{
-    width: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-
-}
-
-
-
-.imgbox{
-    border: 4px outset white;
-    width: 100%;
-    height: auto;
-    margin: 1.5vw;
 }
 
 .imgproduc{
-    width: 100%;
+    width: 20vw;
     height: 22vw;
-    object-fit:contain;
-    max-height: 25vw;
-    padding-top: 2vw;
-
+    margin-top: 2vw;
+    border-radius: 3%;
 }
 
-.pdcnew{
-    width: 100%;
-    align-items: baseline;
-}
-
-.imgpnv{
-    width: 80%;
-    height: auto;
-}
-
-.pdcnewbox{
+.titproductos {
     width: 100%;
     text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 2rem;
 }
 
-
-
-.producdtc{
-    display: flex;
+.carousel{
+    width: 100%;
     align-items: center;
 }
 
-.titpdtcimg{
-    display: inline;
+.carousel-inner{
+    width: 80%;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    background-color: rgb(24, 20, 25);
+}
+
+.grid-items{
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3%;
+    background-color: rgba(255, 255, 255, 0.151);
+}
+
+
+@media(max-width:950px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+        width: 100%;
+        height: auto;
+    }
+
+    .collapse{
+        font-size: 4vw;    
+    }
+}
+
+@media(max-width:800px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .imgproduc {
+        width: 60%;
+        height: auto;
+    }
+
+    .titprinc{
+        font-size: 1.5rem;
+    }
+
+    .titproductos {
+        font-size: 1.3rem;
+    }
 }
 
 footer{
     width: 100%;
     display: flex;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: #ed576183;
+    background-color: rgba(237, 87, 97, 0.514);
     text-align: center;
     font-size: 1.3rem;
 }
 
 .contubi{
-    width: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .map{
     width: 100%;
     height: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.titmap{
+    margin-top: 3vw;
 }
 
 .contredes{
-    width: 50%;
-    display: inline;
+    width: 100%;
+    
 }
 
 .iconredes{
@@ -180,7 +189,7 @@ footer{
 }
 
 .tith4{
-    margin-bottom: 4rem;
+    margin-bottom: 4vw;
 }
 
 .titredes{
@@ -192,6 +201,377 @@ footer{
 
 .dev{
     text-align: center;
-    margin-top: 6vw;
+    margin-top: 5vw;
     text-decoration: none;
+}
+
+.footgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media(max-width:950px){
+    .footgrid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2px;
+        width: 100%;
+    }
+    .imgred{
+        width:30%;
+        height: auto;
+
+    }
+}
+
+
+.logocontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.logobox{
+width: 100%;
+text-align: center;
+padding-top: 3vw;
+padding-bottom: 3vw;
+}
+
+.logo{
+    width: 70%;
+    height: 35vw;
+}
+
+/*Contactos*/
+.contactos{
+    background-image: url(/img/fondocontac.png);
+}
+
+.form-tit{
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgba(237, 87, 97, 0.808);
+    justify-content: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-box{
+    width: 50%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 3rem;
+    justify-content: center;
+    background-color: rgba(2, 0, 0, 0.952);
+    border-radius: 3rem;
+}
+
+.form-princ{
+    width: 100%;
+    display: inline;
+    margin-top: 2rem;
+}
+
+.datos {
+    width: 70%;
+    text-align: initial;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+    
+}
+
+.tit-dat {
+    background-color: rgba(237, 87, 97, 0.397);
+    border-radius: 3rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.inp-dts {
+    width: 80%;
+    padding-top: 0.4rem;
+    border-radius: 1rem;
+}
+
+.confirmacion-edad {
+    width: 100%;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+
+.calendario{
+    text-align: initial;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.tit-conf{
+    text-align: initial;
+    margin-top: 0.6rem;
+}
+
+.contacto-radio{
+    margin-top: 2rem;
+}
+
+.opciones {
+    width: 100%;
+    text-align: initial;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+.envios {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.btnform {
+    margin-top: 2rem;
+}
+
+.btnenv{
+    background-color: rgba(237, 87, 97, 0.87);
+    border-radius: 1rem;
+   padding: 0.8rem;
+   font-size: 1.5rem;
+   color: rgb(255, 255, 255);
+}
+
+.btnres{
+    background-color: rgb(29, 25, 25);
+    border-radius: 1rem;
+   padding: 0.8rem;
+   font-size: 1.5rem;
+   color: rgb(255, 255, 255);
+}
+
+@media (max-width:800px) { 
+    .form{
+        width: 100%;
+       
+    }
+
+    .form-box{
+        width: 90%;
+    }
+
+    .tit-dat{
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .opciones {
+        font-size: 1rem;
+        padding-top: 0.7rem;
+    }
+
+    .btnenv {
+        font-size: 1rem;
+    }
+
+    .btnres {
+        font-size: 1rem;
+    }
+
+    .form-tit{
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/*Productos*/
+
+.tit-productos{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tit-ofer{
+    width: 100%;
+    display: flex;
+    background-color: rgb(237, 87, 97);
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+    padding: 2rem 0 2rem 8vw;
+}
+
+.img-produc{
+    width: 100%;
+    height: 20vw;
+    border-radius: 3%;
+}
+
+.ofertas{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    background-color:  rgba(237, 87, 97, 0.644);
+    justify-content: space-evenly;
+}
+
+.container-ofer{
+    width: 90%;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+.ofer-box{
+    width: 100%;
+    display: inline;
+    text-align: baseline;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.538);
+    padding: 10%;
+    border-radius: 3%;
+    color: rgb(0, 0, 0);
+}
+
+.box{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+.dcp-ofer{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.dcp-precio{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.productos {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-productos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-prod{
+    width: 90%;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    background-color: rgb(24, 20, 25);
+}
+    
+.box-productos{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.prod-box{
+    width: 100%;
+    height: auto;
+    display: inline;
+    text-align: baseline;
+    background-color: rgba(255, 255, 255, 0.538);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10%;
+    border-radius: 3%;
+    color: rgb(0, 0, 0);
+}
+
+
+@media (max-width:1000px) {
+    .container-ofer {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        
+    }
+
+   .img-ofer {
+    width: 100%;
+    height: auto;
+   }
+
+   .container-prod {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+   }  
+
+   .prod-box {
+    padding-top: 2rem;
+    margin-top: 2rem;
+   }
+   
+   .img-produc {
+    width: 100%;
+    height: 40vw;
+}
+}
+
+
+@media (max-width:750px) {
+    .container-ofer {
+        display: inline;
+        width: 75%;
+        justify-content: center;
+    }
+
+    .ofer-box {
+        display: inline;
+        height: 100%;
+    }
+
+    .descripcion-ofer{
+        width: 100%;
+    }
+
+    .img-ofer {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .img-produc {
+        width: 100%;
+        height: 45vw;
+    }
+
+    .container-prod {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+       }  
+    
+       .prod-box {
+        padding-top: 2rem;
+        margin-top: 2rem;
+       }
 }

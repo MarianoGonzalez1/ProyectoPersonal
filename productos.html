@@ -4,25 +4,454 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>MzBebidas</title>
 </head>
 <body>
     <header>
-        <nav class="barraNav">
-            <a href="index.html"><h1 class="btnLogo"><img class="imgLogo" src="/img/cerveza.png" alt="Botellas cerveza">Mz Bebidas</h1></a>
-
-            <div class="btneraNav">
-                <a href="promos.html" class="btnNav">Promos</a>
-                <a href="productos.html" class="btnNav">Productos</a>
-                <a href="contacto.html" class="btnNavEsp">Contacto</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">MzBebidas</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contactos</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
+    
     <main>
-        <h1>productos</h1>
-    </main>
-    <footer>
+      <h1 class="tit-productos">Productos</h1>
 
-    </footer>
+      <h2 class="tit-ofer">¡Ofertas!</h2>
+      
+      <section class="ofertas">
+
+        <div class="container-ofer">
+
+          
+            <div class="box">
+              <div class="ofer-box">
+
+                <div class="img-ofer">
+                  <a href="contacto.html"><img src="img/fernet.jpg" alt="Fernet Branca con Coca Cola" class="img-produc"></a>
+                </div>
+                
+                <div class="descripcion-ofer">
+                  <h5 class="dcp-ofer">Fernet Branca + 2 Coca 2.25lts</h5>
+                  <h6 class="dcp-precio">$1000</h6>
+                </div>
+              
+              </div>
+             </div>
+
+              <div class="box">
+                <div class="ofer-box">
+
+                  <div class="img-ofer">
+                    <a href="contacto.html"><img src="img/malibu.jpg" alt="Malibu con Jugo Baggio" class="img-produc"></a>
+                  </div>
+                 
+                 <div class="descripcion-ofer">
+                    <h5 class="dcp-ofer">Malibu + 2 baggios</h5>
+                    <h5 class="dcp-ofer">(Gusto a elección)</h5>
+                    <h6 class="dcp-precio">$1000</h6>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="box">
+              <div class="ofer-box">
+
+                <div class="img-ofer">
+                  <a href="contacto.html"><img src="img/stellasix.jpg" alt="Six Pack Stella" class="img-produc"></a>
+                </div>
+
+                  <div class="descripcion-ofer">
+                    <h5 class="dcp-ofer">Stella Six Pack</h5>
+                    <h6 class="dcp-precio">$1000</h6>
+                  </div>
+
+              </div>
+              </div>
+          
+             <div class="box">
+              <div class="ofer-box">
+
+                <div class="img-ofer">
+                  <a href="contacto.html"><img src="img/jägermeisterredbull.jpg" alt="Jägermeister Con Red Bull" class="img-produc"></a>
+                </div>
+                
+                  <div class="descripcion-ofer">  
+                  <h5 class="dcp-ofer">Jägermeister + 2 Redbull</h5>
+                  <h6 class="dcp-precio">$1000</h6>
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+      </section>
+
+      <section class="productos"> 
+        <div class="container-productos">
+
+          <div class="container-prod">
+
+
+               <div class="box-productos">
+                <div class="prod-box">
+                 <a href="contacto.html"><img src="img/bombay.jpg" alt="" class="img-produc"></a>
+                 <h5 class="dcp-ofer">Bombay 750ml</h5>
+                 <h5 class="dcp-ofer">Paso de los Toros 2L</h5>
+                 <h6 class="dcp-precio">$2000</h6>
+               </div>
+               </div>
+
+
+
+                <div class="box-productos">
+                <div class="prod-box">
+                  <a href="contacto.html"><img src="img/coshechatardia.jpg" alt="" class="img-produc"></a>
+                  <h5 class="dcp-ofer">Cosecha Tardía 750ml</h5>
+                  <h5 class="dcp-ofer">2 Speed 250ml</h5>
+                  <h6 class="dcp-precio">$2000</h6>
+                </div>
+                </div>
+
+
+                <div class="box-productos">
+                <div class="prod-box">
+                  <a href="contacto.html"><img src="img/bluelabelpr.jpg" alt="" class="img-produc"></a>
+                  <h5 class="dcp-ofer">Blue Label</h5>
+                  <h6 class="dcp-precio">$3000</h6>
+                </div>
+                </div>
+            
+                <div class="box-productos">
+                <div class="prod-box">
+                  <a href="contacto.html"><img src="img/redlabel.jpg" alt="" class="img-produc"></a>
+                  <h5 class="dcp-ofer">Red Label</h5>
+                  <h6 class="dcp-precio">$3000</h6>
+                </div>
+                </div>
+
+          </div>
+        </div>
+
+        <div class="container-productos">
+
+          <div class="container-prod">
+
+            <div class="box-productos">
+              <div class="prod-box">
+              <a href="contacto.html"><img src="img/bombay.jpg" alt="" class="img-produc"></a>
+               <h5 class="dcp-ofer">Bombay 750ml</h5>
+               <h5 class="dcp-ofer">Paso de los Toros 2L</h5>
+                <h6 class="dcp-precio">$2000</h6>
+              </div>
+             </div>
+
+            <div class="box-productos">
+              <div class="prod-box">
+                <a href="contacto.html"><img src="img/coshechatardia.jpg" alt="" class="img-produc"></a>
+                <h5 class="dcp-ofer">Cosecha Tardía 750ml</h5>
+               <h5 class="dcp-ofer">2 Speed 250ml</h5>
+                <h6 class="dcp-precio">$2000</h6>
+            </div>
+           </div>
+
+            <div class="box-productos">
+              <div class="prod-box">
+              <a href="contacto.html"><img src="img/bluelabelpr.jpg" alt="" class="img-produc"></a>
+              <h5 class="dcp-ofer">Blue Label</h5>
+             <h6 class="dcp-precio">$3000</h6>
+              </div>
+            </div>
+
+            <div class="box-productos">
+              <div class="prod-box">
+               <a href="contacto.html"><img src="img/redlabel.jpg" alt="" class="img-produc"></a>
+                <h5 class="dcp-ofer">Red Label</h5>
+                <h6 class="dcp-precio">$3000</h6>
+              </div>
+           </div>
+
+          </div>
+        </div>
+
+      <div class="container-productos">
+
+        <div class="container-prod">
+
+          <div class="box-productos">
+            <div class="prod-box">
+            <a href="contacto.html"><img src="img/bombay.jpg" alt="" class="img-produc"></a>
+             <h5 class="dcp-ofer">Bombay 750ml</h5>
+             <h5 class="dcp-ofer">Paso de los Toros 2L</h5>
+              <h6 class="dcp-precio">$2000</h6>
+            </div>
+           </div>
+
+          <div class="box-productos">
+            <div class="prod-box">
+              <a href="contacto.html"><img src="img/coshechatardia.jpg" alt="" class="img-produc"></a>
+              <h5 class="dcp-ofer">Cosecha Tardía 750ml</h5>
+             <h5 class="dcp-ofer">2 Speed 250ml</h5>
+              <h6 class="dcp-precio">$2000</h6>
+          </div>
+         </div>
+
+          <div class="box-productos">
+            <div class="prod-box">
+            <a href="contacto.html"><img src="img/bluelabelpr.jpg" alt="" class="img-produc"></a>
+            <h5 class="dcp-ofer">Blue Label</h5>
+           <h6 class="dcp-precio">$3000</h6>
+            </div>
+          </div>
+
+          <div class="box-productos">
+            <div class="prod-box">
+             <a href="contacto.html"><img src="img/redlabel.jpg" alt="" class="img-produc"></a>
+              <h5 class="dcp-ofer">Red Label</h5>
+              <h6 class="dcp-precio">$3000</h6>
+            </div>
+         </div>
+
+        </div>
+      </div>
+
+
+    <div class="container-productos">
+
+      <div class="container-prod">
+
+        <div class="box-productos">
+          <div class="prod-box">
+          <a href="contacto.html"><img src="img/bombay.jpg" alt="" class="img-produc"></a>
+           <h5 class="dcp-ofer">Bombay 750ml</h5>
+           <h5 class="dcp-ofer">Paso de los Toros 2L</h5>
+            <h6 class="dcp-precio">$2000</h6>
+          </div>
+         </div>
+
+        <div class="box-productos">
+          <div class="prod-box">
+            <a href="contacto.html"><img src="img/coshechatardia.jpg" alt="" class="img-produc"></a>
+            <h5 class="dcp-ofer">Cosecha Tardía 750ml</h5>
+           <h5 class="dcp-ofer">2 Speed 250ml</h5>
+            <h6 class="dcp-precio">$2000</h6>
+        </div>
+       </div>
+
+        <div class="box-productos">
+          <div class="prod-box">
+          <a href="contacto.html"><img src="img/bluelabelpr.jpg" alt="" class="img-produc"></a>
+          <h5 class="dcp-ofer">Blue Label</h5>
+         <h6 class="dcp-precio">$3000</h6>
+          </div>
+        </div>
+
+        <div class="box-productos">
+          <div class="prod-box">
+           <a href="contacto.html"><img src="img/redlabel.jpg" alt="" class="img-produc"></a>
+            <h5 class="dcp-ofer">Red Label</h5>
+            <h6 class="dcp-precio">$3000</h6>
+          </div>
+       </div>
+
+      </div>
+    </div>
+
+
+  <div class="container-productos">
+
+    <div class="container-prod">
+
+      <div class="box-productos">
+        <div class="prod-box">
+        <a href="contacto.html"><img src="img/bombay.jpg" alt="" class="img-produc"></a>
+         <h5 class="dcp-ofer">Bombay 750ml</h5>
+         <h5 class="dcp-ofer">Paso de los Toros 2L</h5>
+          <h6 class="dcp-precio">$2000</h6>
+        </div>
+       </div>
+
+      <div class="box-productos">
+        <div class="prod-box">
+          <a href="contacto.html"><img src="img/coshechatardia.jpg" alt="" class="img-produc"></a>
+          <h5 class="dcp-ofer">Cosecha Tardía 750ml</h5>
+         <h5 class="dcp-ofer">2 Speed 250ml</h5>
+          <h6 class="dcp-precio">$2000</h6>
+      </div>
+     </div>
+
+      <div class="box-productos">
+        <div class="prod-box">
+        <a href="contacto.html"><img src="img/bluelabelpr.jpg" alt="" class="img-produc"></a>
+        <h5 class="dcp-ofer">Blue Label</h5>
+       <h6 class="dcp-precio">$3000</h6>
+        </div>
+      </div>
+
+      <div class="box-productos">
+        <div class="prod-box">
+         <a href="contacto.html"><img src="img/redlabel.jpg" alt="" class="img-produc"></a>
+          <h5 class="dcp-ofer">Red Label</h5>
+          <h6 class="dcp-precio">$3000</h6>
+        </div>
+     </div>
+
+    </div>
+  </div>
+         
+
+
+
+<div class="container-productos">
+
+  <div class="container-prod">
+
+    <div class="box-productos">
+      <div class="prod-box">
+      <a href="contacto.html"><img src="img/bombay.jpg" alt="" class="img-produc"></a>
+       <h5 class="dcp-ofer">Bombay 750ml</h5>
+       <h5 class="dcp-ofer">Paso de los Toros 2L</h5>
+        <h6 class="dcp-precio">$2000</h6>
+      </div>
+     </div>
+
+    <div class="box-productos">
+      <div class="prod-box">
+        <a href="contacto.html"><img src="img/coshechatardia.jpg" alt="" class="img-produc"></a>
+        <h5 class="dcp-ofer">Cosecha Tardía 750ml</h5>
+       <h5 class="dcp-ofer">2 Speed 250ml</h5>
+        <h6 class="dcp-precio">$2000</h6>
+    </div>
+   </div>
+
+    <div class="box-productos">
+      <div class="prod-box">
+      <a href="contacto.html"><img src="img/bluelabelpr.jpg" alt="" class="img-produc"></a>
+      <h5 class="dcp-ofer">Blue Label</h5>
+     <h6 class="dcp-precio">$3000</h6>
+      </div>
+    </div>
+
+    <div class="box-productos">
+      <div class="prod-box">
+       <a href="contacto.html"><img src="img/redlabel.jpg" alt="" class="img-produc"></a>
+        <h5 class="dcp-ofer">Red Label</h5>
+        <h6 class="dcp-precio">$3000</h6>
+      </div>
+   </div>
+
+  </div>
+</div>
+
+
+<div class="container-productos">
+
+  <div class="container-prod">
+
+    <div class="box-productos">
+      <div class="prod-box">
+      <a href="contacto.html"><img src="img/bombay.jpg" alt="" class="img-produc"></a>
+       <h5 class="dcp-ofer">Bombay 750ml</h5>
+       <h5 class="dcp-ofer">Paso de los Toros 2L</h5>
+        <h6 class="dcp-precio">$2000</h6>
+      </div>
+     </div>
+
+    <div class="box-productos">
+      <div class="prod-box">
+        <a href="contacto.html"><img src="img/coshechatardia.jpg" alt="" class="img-produc"></a>
+        <h5 class="dcp-ofer">Cosecha Tardía 750ml</h5>
+       <h5 class="dcp-ofer">2 Speed 250ml</h5>
+        <h6 class="dcp-precio">$2000</h6>
+    </div>
+   </div>
+
+    <div class="box-productos">
+      <div class="prod-box">
+      <a href="contacto.html"><img src="img/bluelabelpr.jpg" alt="" class="img-produc"></a>
+      <h5 class="dcp-ofer">Blue Label</h5>
+     <h6 class="dcp-precio">$3000</h6>
+      </div>
+    </div>
+
+    <div class="box-productos">
+      <div class="prod-box">
+       <a href="contacto.html"><img src="img/redlabel.jpg" alt="" class="img-produc"></a>
+        <h5 class="dcp-ofer">Red Label</h5>
+        <h6 class="dcp-precio">$3000</h6>
+      </div>
+   </div>
+
+  </div>
+</div>
+      </section>
+</main>
+
+    <footer>
+      <div class="footgrid">
+          <div class="contubi">
+          <div><h3>¿Dondé estamos?</h3></div>
+          <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7827.687202623968!2d-58.69835314068273!3d-34.42327365289075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1729303267906!5m2!1ses-419!2sar" width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+          <div class="titmap"><h5>Av. siempre viva 123, Springfield, Provincia de Buenos Aires</h5></div>
+           </div>
+      </div>
+      
+      <div class="contredes">
+
+          <h3>¡Nuestras Redes!</h3>
+
+          <h4 class="tith4">Seguinos en:</h4>
+
+          <div class="iconredes">
+              <div class="boxredes">
+              <div class="iconbox">
+                  <a href="https://www.instagram.com/marianogonzaalez/"><img src="img/instagram.png" alt="Instagram" class="imgred"></a>
+                  <h6 class="titredes">Instagram</h6>
+              </div>
+              <div class="iconbox">
+                  <a href=""><img src="img/discord.png" alt="Discord" class="imgred"></a>
+                  <h6 class="titredes">Discord</h6>
+              </div>
+              <div class="iconbox">
+                  <a href="https://www.linkedin.com/in/mariano-yael-gonzalez-0b360321b/"><img src="img/linkedin.png" alt="Linkedin" class="imgred"></a>
+                  <h6 class="titredes">Linkedin</h6>
+              </div>
+              <div class="iconbox">
+                  <a href=""><img src="img/facebook.png" alt="Facebook" class="imgred"></a>
+                  <h6 class="titredes">Facebook</h6>
+              </div>
+              <div class="iconbox">
+                  <a href="https://github.com/MarianoGonzalez1"><img src="img/github.png" alt="" class="imgred"></a>
+                  <h6 class="titredes">Git Hub</h6>
+              </div>
+              </div>
+          </div>
+          <div class="dev">
+              <h5>Desarollado por: <a href="https://www.linkedin.com/in/mariano-yael-gonzalez-0b360321b/">Mariano Gonzalez</a></h5>
+          </div>
+      </div>
+  </footer>
+
 </body>
 </html>
